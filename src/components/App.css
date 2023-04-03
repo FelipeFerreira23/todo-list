@@ -1,0 +1,128 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+form  {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: -1.687rem;
+  margin-bottom: 4rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: .5rem;
+
+  font-size: 1rem;
+  color: var(--gray-300);
+  font-weight: 400;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+}
+
+.btn-form {
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  border: 0;
+  border-radius: .5rem;
+
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  font-weight: 700;
+}
+
+.btn-form:hover {
+  filter: brightness(0.9);
+}
+
+.info {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p:first-child {
+  font-size: 0.875rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.info p:last-child {
+  font-size: 0.875rem;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.info p span {
+  background-color: var(--gray-400);
+  padding: 0.125rem .5rem;
+  border-radius: 100rem;
+  margin-left: .5rem;
+
+  color: var(--gray-100);
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+li {
+  width: 100%;
+  min-height: 4.5rem;
+  padding: 1rem;
+  gap: .75rem;
+  
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: .5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+}
+
+li + li {
+  margin-top: 0.75rem;
+}
+
+li button {
+  border: 0;
+  background-color: transparent;
+  display: flex;
+}
+
+li button.delete svg {
+  color: var(--gray-300);
+  font-size: 1.5rem;
+}
+
+li button.toogle-complete svg {
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+li.task-complete {
+  text-decoration: line-through;
+}
+
+li.task-complete button.toogle-complete svg {
+  color: var(--purple);
+}
